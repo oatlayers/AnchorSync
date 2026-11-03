@@ -6,8 +6,10 @@ import threading
 from qt.core import (
     QDialog,
     QDialogButtonBox,
+    QIcon,
     QInputDialog,
     QLabel,
+    QPixmap,
     QPlainTextEdit,
     QTimer,
     QVBoxLayout,
@@ -120,6 +122,7 @@ class InterfacePlugin(InterfaceAction):
     action_menu_clone_qaction = 'Sync to KOReader'
 
     def genesis(self):
+        self._load_icon()
         self.qaction.triggered.connect(self.sync)
         self._sync_running = False
         self._operation = None
@@ -166,6 +169,40 @@ class InterfacePlugin(InterfaceAction):
                 shortcut=False,
             ),
         ]
+
+    def _load_icon(self):
+        """Use the icon packed in images/ for the toolbar button."""
+        names = tuple(
+            'images/icon-%d.png' % size
+            for size in (16, 24, 32, 48, 64, 128, 256)
+        )
+        resources = {}
+        plugin = self.interface_action_base_plugin
+        if plugin is not None:
+            try:
+                resources = plugin.load_resources(names)
+            except (AttributeError, OSError, ValueError):
+                pass
+        if not resources:
+            try:
+                resources = self.load_resources(names)
+            except (AttributeError, OSError, ValueError):
+                pass
+        icon = QIcon()
+        source_dir = os.path.dirname(os.path.abspath(__file__))
+        for name in names:
+            pixmap = QPixmap()
+            data = resources.get(name)
+            if data:
+                loaded = pixmap.loadFromData(data, 'PNG')
+            else:
+                path = os.path.join(source_dir, name.replace('/', os.sep))
+                loaded = pixmap.load(path)
+            if loaded and not pixmap.isNull():
+                icon.addPixmap(pixmap)
+        if not icon.isNull():
+            self.qaction.setIcon(icon)
+            self.menuless_qaction.setIcon(icon)
 
     # ------------------------------------------------------------------
     # Action state

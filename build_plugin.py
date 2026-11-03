@@ -16,6 +16,14 @@ FILES = (
     'sync_core.py',
     'ui.py',
     'plugin-import-name-anchorsync.txt',
+    'images/icon-16.png',
+    'images/icon-24.png',
+    'images/icon-32.png',
+    'images/icon-48.png',
+    'images/icon-64.png',
+    'images/icon-128.png',
+    'images/icon-256.png',
+    'images/plugin-icon.png',
 )
 VERSION_PATTERN = re.compile(
     r'^\s*version\s*=\s*\((\d+),\s*(\d+),\s*(\d+)\)\s*$',

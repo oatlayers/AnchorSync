@@ -7,6 +7,14 @@ and the project follows [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-11-04
+
+### Added
+
+- Anchor-and-open-book toolbar and plugin icon, shipped at 16, 24, 32, 48, 64,
+  128, and 256 px, with editable sources in `design/`. The toolbar action loads
+  the icon from the plugin ZIP.
+
 ## [0.1.0] - 2026-10-31
 
 First public release under the AnchorSync name.

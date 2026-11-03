@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+  <title>AnchorSync icon</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path d="M112 0 L400 0 C461.856 0 512 50.144 512 112 L512 400 C512 461.856 461.856 512 400 512 L112 512 C50.144 512 0 461.856 0 400 L0 112 C0 50.144 50.144 0 112 0 Z" fill="#14324c"/>
+    <path id="Anchor_arms" data-name="Anchor arms" d="M130 348 C136 414 190 444 256 412 C322 444 378 414 382 348" fill="none" stroke="#f4ead8" stroke-width="36" stroke-miterlimit="10"/>
+    <path id="Book_page_left" data-name="Book page left" d="M252 246 C216 236 178 234 144 240 L144 300 C178 294 216 298 252 312 Z" fill="#e4572e"/>
+    <path id="Book_page_right" data-name="Book page right" d="M260 246 C296 236 334 234 368 240 L368 300 C334 294 296 298 260 312 Z" fill="#e4572e"/>
+    <path id="Page_line_left_1" data-name="Page line left 1" d="M156 258 C186 252 214 252 244 260" fill="none" stroke="#14324c" stroke-width="5" stroke-miterlimit="10"/>
+    <path id="Page_line_left_2" data-name="Page line left 2" d="M156 276 C186 270 214 270 244 278" fill="none" stroke="#14324c" stroke-width="5" stroke-miterlimit="10"/>
+    <path id="Page_line_right_1" data-name="Page line right 1" d="M356 258 C326 252 298 252 268 260" fill="none" stroke="#14324c" stroke-width="5" stroke-miterlimit="10"/>
+    <path id="Page_line_right_2" data-name="Page line right 2" d="M356 276 C326 270 298 270 268 278" fill="none" stroke="#14324c" stroke-width="5" stroke-miterlimit="10"/>
+    <path d="M256 208 L256 208 C265.941 208 274 216.059 274 226 L274 386 C274 395.941 265.941 404 256 404 L256 404 C246.059 404 238 395.941 238 386 L238 226 C238 216.059 246.059 208 256 208 Z" fill="#f4ead8"/>
+    <circle cx="256" cy="160" r="56" fill="none" stroke="#f4ead8" stroke-width="26" stroke-miterlimit="10"/>
+    <polygon id="Fluke_left" data-name="Fluke left" points="130,350 108,318 164,338" fill="#f4ead8"/>
+    <polygon id="Fluke_right" data-name="Fluke right" points="382,350 404,318 348,338" fill="#f4ead8"/>
+  </g>
+</svg>

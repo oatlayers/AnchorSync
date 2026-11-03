@@ -1116,7 +1116,7 @@ class SourceInvariantTests(unittest.TestCase):
     def test_plugin_identity_and_version(self):
         source = self._read('__init__.py')
         self.assertIn("name = 'AnchorSync'", source)
-        self.assertIn('version = (0, 1, 0)', source)
+        self.assertIn('version = (0, 1, 1)', source)
 
 
 if __name__ == '__main__':

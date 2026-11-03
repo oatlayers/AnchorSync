@@ -11,7 +11,7 @@ class AnchorSyncPlugin(InterfaceActionBase):
     )
     supported_platforms = ['windows', 'osx', 'linux']
     author = 'OpenCode'
-    version = (0, 1, 0)
+    version = (0, 1, 1)
     minimum_calibre_version = (6, 0, 0)
     actual_plugin = 'calibre_plugins.anchorsync.ui:InterfacePlugin'
 

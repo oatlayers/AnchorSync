@@ -1,5 +1,9 @@
 # AnchorSync
 
+<p align="center">
+  <img src="design/anchorsync-icon.svg" width="112" height="112" alt="AnchorSync icon">
+</p>
+
 AnchorSync is a Calibre plugin that exports EPUB and PDF books from a
 Calibre library into one flat folder for KOReader. It is designed around one
 rule: **an existing book must stay where it is, under the same name**.
@@ -23,7 +27,7 @@ Flat book folder  --- your transport --->  e-reader
         +--------------------------------------+
 ```
 
-> **Status:** 0.1.0, first public release. Sync is manual only.
+> **Status:** 0.1.1, public release. Sync is manual only.
 
 ## Contents
 
@@ -58,7 +62,7 @@ Flat book folder  --- your transport --->  e-reader
    python build_plugin.py
    ```
 
-   The result is `dist/AnchorSync-0.1.0.zip`.
+   The result is `dist/AnchorSync-0.1.1.zip`.
 
 2. In Calibre, open **Preferences -> Plugins -> Load plugin from file** and
    select the ZIP. Restart Calibre.
@@ -127,7 +131,7 @@ cd anchorsync
 python build_plugin.py
 ```
 
-Install `dist/AnchorSync-0.1.0.zip` using the steps above.
+Install `dist/AnchorSync-0.1.1.zip` using the steps above.
 
 The plugin is a Calibre plugin, not a pip package. Installing it means loading
 the ZIP through Calibre.
@@ -354,11 +358,15 @@ trash, and inspect the last report before retrying.
 |   |-- config.py                          Preferences, migration, settings UI
 |   |-- sync_core.py                       Manifest, journal, reconcile, cleanup, restore
 |   |-- ui.py                              Toolbar actions, export, dialogs, reports
+|   |-- images/                            Toolbar icon at 16-256 px
 |   `-- plugin-import-name-anchorsync.txt
 |-- tests/
 |   |-- support.py                         Shared fixtures
 |   |-- test_sync_core.py                  Safety, cleanup, restore, manifest, journal
 |   `-- test_hardening.py                  Performance, fault injection, lifecycle
+|-- design/
+|   |-- anchorsync-icon.vectorcraft        Editable VectorCraft source
+|   `-- anchorsync-icon.svg                Vector icon source
 |-- build_plugin.py                        Builds the installable ZIP from src/
 |-- dist/                                  Generated ZIP (ignored by Git)
 |-- .github/workflows/ci.yml               Test and build on GitHub Actions

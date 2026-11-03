@@ -6,4 +6,7 @@
 *.yml text eol=lf
 *.yaml text eol=lf
 *.json text eol=lf
+*.svg text eol=lf
+*.png binary
+*.vectorcraft text eol=lf
 *.zip binary
